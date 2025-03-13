@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    background-image: url("/images/menu_cupcakes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 20vh;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 40px;
+        background-color: rgb(100, 163, 172);
+        padding: 10px;
+        border-radius: 10px;
+        height: 7vh;
+        text-shadow: 2px 2px #000000;
+        box-shadow: 5px 5px #0000009c;
+    }
+
+    p {
+        font-size: 25px;
+        background-color: rgb(100, 163, 172);
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+        height: 6vh;
+        text-shadow: 2px 2px #000000;
+        box-shadow: 5px 5px #0000009c;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 60px
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(100, 163, 172);
+    padding: 40px;
+    border-radius: 10px;
+    gap: 15px;
+    color: white;
+    width: 50%;
+    height: 100%;
+    box-shadow: 5px 5px #0000009c;
+    text-shadow: 2px 2px #000000;
+
+    button {
+        padding: 5px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 5px 5px #0000009c;
+    }
+
+    div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+}
+
+.main-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    margin-top: 100px;
+    background-color: rgb(240, 166, 222);
+    padding: 40px;
+    border-radius: 10px;
+    gap: 15px;
+    color: white;
+    width: 50%;
+    box-shadow: 5px 5px #0000009c;
+    text-shadow: 2px 2px #000000;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.individuals {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}

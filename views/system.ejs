@@ -1,0 +1,24 @@
+    <%- include('includes/head.ejs') -%>
+</head>
+
+<body>
+
+    <%- include('includes/navigation.ejs') -%>
+
+    <div class="main-container">
+        <main class="card">
+            <h1>Hello, <%= user.username %> </h1>
+            <h1>I'm gonna tell you stuff about cupcakes</h1>
+            <p>First, input some of your favorite flavors to our system.</p>
+            <form action="/route/add-cupcake" method="POST">
+                <div class="form-control">
+                    <label for="title">Cupcake Flavor:</label>
+                    <input type="text" name="title" id="title">
+                    <button class="btn" type="submit">Add Cupcake</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

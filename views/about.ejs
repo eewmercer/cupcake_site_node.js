@@ -1,0 +1,43 @@
+    <%- include('includes/head.ejs') -%>
+
+</head>
+<body>
+    
+    <%- include('includes/navigation.ejs') -%>
+
+    <div class="main-container">
+        <main class="main-flex">
+            <div class="main-card">
+                <h1>Cupcakes</h1>
+                <h3>What are they good for?</h3>
+                <ul>
+                    <li>Eating</li>
+                    <li>Decorating</li>
+                    <li>Smearing on the wall</li>
+                    <li>Feeding your dog</li>
+                    <li>Cutting the cake part in half and putting it on top to make a cupcake sandwich</li>
+                </ul>
+            </div>
+            <h1 class="title">Your cupcakes:</h1>
+            <div class="individuals">
+                <% for (let cupcake of cupcakes) { %>
+                    <div class="card">
+                        <li><%= cupcake.title %></li>
+                        <div class="data-buttons">
+                            <form action="/edit-cupcake" method="GET">
+                                <input type="hidden" name="id" value="<%= cupcake._id %>">
+                                <button type="submit">Edit</button>
+                            </form>
+                            <form action="/delete-cupcake" method="POST">
+                                <input type="hidden" name="id" value="<%= cupcake._id %>">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
